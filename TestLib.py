@@ -194,13 +194,13 @@ if(start_finetuning_success):
     except AttributeError as e:
         print(f"Function get_fine_tuning_status failed: {e}")
 
-# print('9. get fine tuning list');
-# try:
-#     fineTuningList = client11.fine_tuning.get_fine_tuning_results()
-#     print(fineTuningList)
-#     fine_tuning_list = True
-# except AttributeError as e:
-#     print(f"Function get_fine_tuning_list failed: {e}")
+print('9. get fine tuning list');
+try:
+    fineTuningList = client11.fine_tuning.get_fine_tuning_results()
+    print(fineTuningList)
+    fine_tuning_list = True
+except AttributeError as e:
+    print(f"Function get_fine_tuning_list failed: {e}")
 
         
 
